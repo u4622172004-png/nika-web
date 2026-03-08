@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  * {
-    @apply border-gray-800;
-  }
-  body {
-    @apply bg-slate-900 text-white;
-  }
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,15 +23,9 @@
 
 /* Animations */
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .animate-gradient {
@@ -48,7 +33,7 @@
   animation: gradient 15s ease infinite;
 }
 
-/* Glow effect */
+/* Glow effects */
 .glow {
   box-shadow: 0 0 20px rgba(236, 72, 153, 0.5),
               0 0 40px rgba(139, 92, 246, 0.3);
